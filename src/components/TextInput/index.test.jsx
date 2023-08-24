@@ -8,7 +8,7 @@ import { fireEvent, render, screen } from "@testing-library/react";
 
 describe("TextInput", () => {
   render(<TextInput />);
-  const createBtn = screen.getByRole("button");
+  const createBtn = screen.getByRole("button", {name:"CREATE TODO"});
   const state = { todoList: [] };
 
   it("should fill state.todoList with textContent, at index=0", async () => {
