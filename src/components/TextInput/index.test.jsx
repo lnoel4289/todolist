@@ -1,5 +1,7 @@
 import TextInput from ".";
 import { fireEvent, render, screen } from "@testing-library/react";
+import { Provider } from "react-redux";
+import store from "../../store";
 
 /**
  * SPECIFICATIONS
@@ -7,8 +9,12 @@ import { fireEvent, render, screen } from "@testing-library/react";
  */
 
 describe("TextInput", () => {
-  render(<TextInput />);
-  const createBtn = screen.getByRole("button", {name:"CREATE TODO"});
+  render(
+    <Provider store = {store}>
+      <TextInput />
+    </Provider>
+  );
+  const createBtn = screen.getByRole("button", { name: "CREATE TODO" });
   const state = { todoList: [] };
 
   it("should fill state.todoList with textContent, at index=0", async () => {

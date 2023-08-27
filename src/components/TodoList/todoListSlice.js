@@ -1,20 +1,26 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const { actions, reducer } = createSlice({
+const todoListSlice = createSlice({
   name: "todoList",
   initialState: [],
   reducers: {
-    create(state, action) {
-      state.unshift(action.payload);
+    add: {
+      prepare: (textContent) => ({ payload: { textContent } }),
+      reducer: (state, action) => {
+        state.unshift(action.payload.textContent);
+      },
     },
-    check(state, action) {
-      state.filter((elt) => elt !== action.payload);
+    remove: {
+      prepare: (textContent) => ({ payload: { textContent } }),
+      reducer: (state, action) => {
+        return state.filter((elem) => elem !== action.payload.textContent);
+      },
     },
-    remove(state, action) {
-      state.filter((elt) => elt !== action.payload);
+    reducer: (state, action) => {
+      state.filter((elem) => elem !== action.payload.textContent);
     },
   },
 });
 
-export const { create, check, remove } = actions;
-export default reducer;
+export const { add, remove } = todoListSlice.actions;
+export default todoListSlice.reducer;
