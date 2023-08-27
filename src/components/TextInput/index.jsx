@@ -1,18 +1,15 @@
 import React from "react";
-import * as todoListActions from "../TodoList/todoListSlice";
+import * as textInputActions from "../TextInput/textInputSlice";
 import { useDispatch } from "react-redux";
 
 const TextInput = () => {
   const dispatch = useDispatch();
 
   const handleChange = (e) => {
-    let textContent = e.target.value;
-    return textContent;
+    dispatch(textInputActions.change(e.target.value));
   };
-  const handleSubmit = () => {
-    const textContent = handleChange();
-    dispatch(todoListActions.add(textContent));
-  };
+  const handleReset = () => dispatch(textInputActions.change(""));
+  const handleSubmit = () => {};
 
   return (
     <>
@@ -26,7 +23,7 @@ const TextInput = () => {
           onChange={handleChange}
           required
         />
-        <input type="reset" value="reset" />
+        <input type="reset" value="reset" onClick={handleReset} data-testid="reset-btn" />
         <input type="submit" value="CREATE TODO" onSubmit={handleSubmit} />
       </form>
     </>

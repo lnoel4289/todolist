@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const textInputSlice = createSlice({
   name: "textInput",
-  initialState: null,
+  initialState: "",
   reducers: {
     change: {
       prepare: (textValue) => ({ payload: { textValue } }),
