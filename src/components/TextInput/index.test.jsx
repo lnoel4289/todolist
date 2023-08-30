@@ -10,6 +10,7 @@ import { beforeEach } from "vitest";
  */
 
 describe("TextInput", () => {
+
   beforeEach(() => {
     render(
       <Provider store={store}>
@@ -17,8 +18,6 @@ describe("TextInput", () => {
       </Provider>
     );
   });
-
-  // const createBtn = screen.getByRole("button", { name: "CREATE TODO" });
 
   it("should verify that state.textInput and textInput are always equal", async () => {
     const textInput = screen.getByLabelText("Enter a task to do here");
