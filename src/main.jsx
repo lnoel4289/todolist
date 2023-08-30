@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import store from "./store";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MyTodoList from "./components/MyTodoList";
+import AboutPage from "./components/AboutPage";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Provider store={store}>
@@ -12,6 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MyTodoList />} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
       </BrowserRouter>
     </React.StrictMode>

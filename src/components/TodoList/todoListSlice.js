@@ -16,9 +16,6 @@ const todoListSlice = createSlice({
         return state.filter((elem) => elem !== action.payload.textContent);
       },
     },
-    reducer: (state, action) => {
-      state.filter((elem) => elem !== action.payload.textContent);
-    },
   },
 });
 
