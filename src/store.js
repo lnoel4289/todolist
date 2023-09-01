@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
-import todoListReducer from "./components/TodoList/todoListSlice";
 import inputTextReducer from "./components/TextInput/textInputSlice";
+import todoListReducer from "./components/TodoList/todoListSlice";
+import doneListReducer from "./components/DoneList/doneListSlice";
 
 const store = configureStore({
   reducer: {
-    todoList: todoListReducer,
     textInput: inputTextReducer,
+    todoList: todoListReducer,
+    doneList: doneListReducer,
   },
 });
 export default store;
