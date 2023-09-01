@@ -1,8 +1,7 @@
 import TextInput from ".";
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
-import { Provider } from "react-redux";
 import store from "../../store";
-import { beforeEach } from "vitest";
+import Wrapper from "../../Wrapper";
 
 /**
  * SPECIFICATIONS
@@ -10,13 +9,8 @@ import { beforeEach } from "vitest";
  */
 
 describe("TextInput", () => {
-
   beforeEach(() => {
-    render(
-      <Provider store={store}>
-        <TextInput />
-      </Provider>
-    );
+    render(<TextInput />, { wrapper: Wrapper });
   });
 
   it("should verify that state.textInput and textInput are always equal", async () => {
