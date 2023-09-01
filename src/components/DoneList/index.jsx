@@ -1,8 +1,9 @@
 import React from "react";
 import Done from "../Done";
+import { useSelector } from "react-redux";
 
 const DoneList = () => {
-  const doneList = ["done1", "done2", "done3"];
+  const doneList = useSelector((state) => state.doneList);
 
   return (
     <div>

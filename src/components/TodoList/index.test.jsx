@@ -1,10 +1,23 @@
 import TodoList from ".";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import Wrapper from "../../Wrapper";
+import Todo from "../Todo";
 
 describe("TodoList", () => {
+  const state = {
+    todoList: ["todo1", "todo2", "todo3"],
+  };
+
   beforeEach(() => {
     render(<TodoList />, { wrapper: Wrapper });
   });
-  it("should render a Todo Component for each element of todoList state", () => {});
+
+  screen.debug()
+
+  it("", () => {})
+
+  // it("should render a list of Todo components based on state.todoList", () => {
+  //   const todoList = document.querySelectorAll("li");
+  //   expect(todoList.length).toBe(state.todoList.length);
+  // });
 });

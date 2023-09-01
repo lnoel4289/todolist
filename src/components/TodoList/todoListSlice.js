@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const todoListSlice = createSlice({
   name: "todoList",
-  initialState: [],
+  initialState: ["todo1", "todo2", "todo3"],
   reducers: {
     add: {
       prepare: (textContent) => ({ payload: { textContent } }),
