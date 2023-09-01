@@ -6,12 +6,12 @@ const TodoList = () => {
 
   return (
     <div>
-      TODOList Component
+      TODOLIST COMPONENT
       <ul>
         {todoList.map((todo, index) => {
           return (
             <li key={`todo${index}`}>
-              <Todo todo={todo} index={index} />
+              <Todo todo={todo} index={index} checked={false} />
             </li>
           );
         })}
