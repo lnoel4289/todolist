@@ -6,9 +6,7 @@ const DoneList = () => {
     <div>
       DoneList Component
       <ul>
-        <li>
-          <Done />
-        </li>
+        <li></li>
       </ul>
     </div>
   );

@@ -1,7 +1,9 @@
-import React from "react";
-
-const Done = () => {
-  return <div>Done Component</div>;
+const Done = ({ done, index }) => {
+  return (
+    <div>
+      {index + 1} {done}  <input type="checkbox" checked={true} />
+    </div>
+  );
 };
 
 export default Done;
