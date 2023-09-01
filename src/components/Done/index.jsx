@@ -1,7 +1,7 @@
-const Done = ({ done, index, checked }) => {
+const Done = ({ done, checked }) => {
   return (
     <div>
-      {index + 1} {done}  <input type="checkbox" checked ={checked} />
+      {done} <input type="checkbox" checked={checked} />
     </div>
   );
 };
