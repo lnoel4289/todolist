@@ -11,6 +11,7 @@ describe("App", () => {
     const textInput = screen.getByLabelText("Enter a task to do here");
     fireEvent.change(textInput, { target: { value: "i should do this task" } });
     expect(textInput.value).toBe("i should do this task");
+    expect(screen.getByDisplayValue(/i should do this task/i)).toBeDefined();
     fireEvent.click(aboutLink);
     expect(
       screen.getByText(
