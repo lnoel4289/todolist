@@ -2,11 +2,11 @@ import { useDispatch } from "react-redux";
 import * as todoListActions from "../TodoList/todoListSlice";
 import * as doneListActions from "../doneList/doneListSlice";
 
-const Done = ({ done, checked }) => {
+const Done = ({ done, checked, index }) => {
   const dispatch = useDispatch();
   function handleUncheck() {
     dispatch(todoListActions.add(done));
-    dispatch(doneListActions.remove(done));
+    dispatch(doneListActions.remove(index));
   }
 
   return (

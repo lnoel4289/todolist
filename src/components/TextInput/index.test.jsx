@@ -43,8 +43,8 @@ describe("TextInput", () => {
     });
     fireEvent.click(createBtn);
     expect(store.getState().todoList).toEqual([
-      "i should also do that other task",
       "i should do this task",
+      "i should also do that other task",
     ]);
     expect(textInput.value).toBe("");
     expect(store.getState().textInput).toBe("");

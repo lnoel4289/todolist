@@ -7,13 +7,13 @@ const todoListSlice = createSlice({
     add: {
       prepare: (textContent) => ({ payload: { textContent } }),
       reducer: (state, action) => {
-        state.unshift(action.payload.textContent);
+        state.push(action.payload.textContent);
       },
     },
     remove: {
-      prepare: (textContent) => ({ payload: { textContent } }),
+      prepare: (index) => ({ payload: { index } }),
       reducer: (state, action) => {
-        return state.filter((elem) => elem !== action.payload.textContent);
+        return state.filter((_, index) => index !== action.payload.index);
       },
     },
   },

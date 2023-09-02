@@ -7,15 +7,15 @@ describe("todoList reducer", () => {
       "hello",
     ]);
     expect(todoListReducer(["hello"], todoListActions.add("world"))).toEqual([
-      "world",
       "hello",
+      "world",
     ]);
   });
-  it("should remove textContent from todoList array when action is remove", () => {
+  it("should remove element from todoList array according to its index when action is remove", () => {
     expect(
       todoListReducer(
         ["goodbye", "hello", "world"],
-        todoListActions.remove("hello")
+        todoListActions.remove(1)
       )
     ).toEqual(["goodbye", "world"]);
   });
