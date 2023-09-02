@@ -12,7 +12,7 @@ const DoneList = () => {
         {doneList.map((done, index) => {
           return (
             <li key={`done${index}`}>
-              <Done done={done} checked={true} />
+              <Done done={done} index={index} checked={true} />
             </li>
           );
         })}

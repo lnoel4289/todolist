@@ -11,9 +11,9 @@ const doneListSlice = createSlice({
       },
     },
     remove: {
-      prepare: (textContent) => ({ payload: { textContent } }),
+      prepare: (index) => ({ payload: { index } }),
       reducer: (state, action) => {
-        return state.filter((elem) => elem !== action.payload.textContent);
+        return state.filter((_, index) => index !== action.payload.index);
       },
     },
   },
