@@ -11,12 +11,9 @@ describe("doneListSlice", () => {
       "hello",
     ]);
   });
-  it("should remove textContent from doneList array when action is remove", () => {
+  it("should remove element from doneList array according to its index when action is remove", () => {
     expect(
-      doneListReducer(
-        ["goodbye", "hello", "world"],
-        doneListActions.remove("hello")
-      )
+      doneListReducer(["goodbye", "hello", "world"], doneListActions.remove(1))
     ).toEqual(["goodbye", "world"]);
   });
 });
