@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import * as todoListActions from "../TodoList/todoListSlice";
-import * as doneListActions from "../doneList/doneListSlice";
+import * as doneListActions from "../DoneList/doneListSlice";
 
 const Done = ({ done, checked, index }) => {
   const dispatch = useDispatch();
@@ -9,10 +9,15 @@ const Done = ({ done, checked, index }) => {
     dispatch(doneListActions.remove(index));
   }
 
+  function handleDelete() {
+    dispatch(doneListActions.remove(index));
+  }
+
   return (
     <div>
       {done}{" "}
       <input type="checkbox" checked={checked} onChange={handleUncheck} />
+      <i class="fa-solid fa-trash" onClick={handleDelete} />
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import { render, screen } from "@testing-library/react";
 import Done from ".";
-import { expect } from "vitest";
 import Wrapper from "../../Wrapper";
 
 describe("Done", () => {
@@ -9,4 +8,5 @@ describe("Done", () => {
     expect(screen.getByText(/hello/i)).toBeDefined();
     expect(screen.getByRole("checkbox").checked).toBe(true);
   });
+  it("should delete component from screen when trash icon is clicked", () => {});
 });
