@@ -1,17 +1,11 @@
 import { render, screen } from "@testing-library/react";
-import Todo from ".";
+import Done from ".";
 import { expect } from "vitest";
 
-/**
- * SPECS
- * should display props {todo,index,checked}
- */
-
-describe("Todo", () => {
+describe("Done", () => {
   it("should render component according to props", () => {
-    render(<Todo todo="hello" index={42} checked={true} />);
+    render(<Done done="hello" checked={true} />);
     expect(screen.getByText(/hello/i)).toBeDefined();
-    expect(screen.getByText(/43/)).toBeDefined();
     expect(screen.getByRole("checkbox").checked).toBe(true);
   });
 });
