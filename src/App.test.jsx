@@ -15,7 +15,7 @@ describe("App", () => {
     fireEvent.click(aboutLink);
     expect(
       screen.getByText(
-        /this is an additional page to show that the state persists between pages. You can safely navigate between pages and the current display won't be reset when you come back/i
+        /this is an additional page to show that the state persists between pages. You can safely navigate between pages and the current state won't be reset when you come back/i
       )
     ).toBeDefined();
     fireEvent.click(homeLink);

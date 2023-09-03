@@ -8,5 +8,4 @@ describe("Done", () => {
     expect(screen.getByText(/hello/i)).toBeDefined();
     expect(screen.getByRole("checkbox").checked).toBe(true);
   });
-  it("should delete component from screen when trash icon is clicked", () => {});
 });

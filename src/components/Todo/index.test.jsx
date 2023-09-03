@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import Todo from ".";
 import Wrapper from "../../Wrapper";
 
@@ -10,6 +10,5 @@ describe("Todo", () => {
     expect(screen.getByText(/hello/i)).toBeDefined();
     expect(screen.getByText(/43/)).toBeDefined();
     expect(screen.getByRole("checkbox").checked).toBe(true);
-    it("should delete component from screen when trash icon is clicked", () => {});
   });
 });
