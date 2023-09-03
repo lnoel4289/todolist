@@ -3,8 +3,7 @@ import React from "react";
 const AboutPage = () => {
   return (
     <div>
-      This is an additional page to show that the state persists between pages.
-      You can safely navigate between pages and the current state won't be reset when you come back.
+      This additional page aims to show that state persists through navigating. You can safely visit an other page while current state isn't affected.
     </div>
   );
 };
