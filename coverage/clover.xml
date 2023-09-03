@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1693744316705" clover="3.2.0">
-  <project timestamp="1693744316705" name="All files">
-    <metrics statements="296" coveredstatements="238" conditionals="14" coveredconditionals="14" methods="24" coveredmethods="11" elements="334" coveredelements="263" complexity="0" loc="296" ncloc="296" packages="10" files="14" classes="14"/>
+<coverage generated="1693749788070" clover="3.2.0">
+  <project timestamp="1693749788070" name="All files">
+    <metrics statements="310" coveredstatements="290" conditionals="30" coveredconditionals="30" methods="29" coveredmethods="24" elements="369" coveredelements="344" complexity="0" loc="310" ncloc="310" packages="10" files="15" classes="15"/>
     <package name="src">
-      <metrics statements="42" coveredstatements="42" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <metrics statements="56" coveredstatements="56" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="App.jsx" path="D:\dev\cours-formations\redux cours\exos chatGPT\todolist_react-redux-tdd-vite-vitest\src\App.jsx">
         <metrics statements="27" coveredstatements="27" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
@@ -16,23 +16,40 @@
         <line num="8" count="1" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
         <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
         <line num="27" count="1" type="stmt"/>
+      </file>
+      <file name="Wrapper.jsx" path="D:\dev\cours-formations\redux cours\exos chatGPT\todolist_react-redux-tdd-vite-vitest\src\Wrapper.jsx">
+        <metrics statements="14" coveredstatements="14" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="9" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="9" count="9" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="11" count="9" type="stmt"/>
+        <line num="12" count="9" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
       </file>
       <file name="store.js" path="D:\dev\cours-formations\redux cours\exos chatGPT\todolist_react-redux-tdd-vite-vitest\src\store.js">
         <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -71,40 +88,40 @@
       </file>
     </package>
     <package name="src.components.Done">
-      <metrics statements="25" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="25" coveredstatements="20" conditionals="1" coveredconditionals="1" methods="3" coveredmethods="1"/>
       <file name="index.jsx" path="D:\dev\cours-formations\redux cours\exos chatGPT\todolist_react-redux-tdd-vite-vitest\src\components\Done\index.jsx">
-        <metrics statements="25" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="25" coveredstatements="20" conditionals="1" coveredconditionals="1" methods="3" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
         <line num="25" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.components.DoneList">
-      <metrics statements="47" coveredstatements="40" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="1"/>
+      <metrics statements="47" coveredstatements="42" conditionals="7" coveredconditionals="7" methods="5" coveredmethods="5"/>
       <file name="doneListSlice.js" path="D:\dev\cours-formations\redux cours\exos chatGPT\todolist_react-redux-tdd-vite-vitest\src\components\DoneList\doneListSlice.js">
-        <metrics statements="23" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <metrics statements="23" coveredstatements="23" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -112,15 +129,15 @@
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="2" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
+        <line num="14" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="16" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="17" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
@@ -136,23 +153,23 @@
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="6" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="7" count="4" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
-        <line num="9" count="4" type="stmt"/>
-        <line num="10" count="4" type="stmt"/>
-        <line num="11" count="4" type="stmt"/>
-        <line num="12" count="4" type="stmt"/>
+        <line num="6" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="9" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="9" count="9" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="11" count="9" type="stmt"/>
+        <line num="12" count="9" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
-        <line num="18" count="4" type="stmt"/>
-        <line num="19" count="4" type="stmt"/>
-        <line num="20" count="4" type="stmt"/>
-        <line num="21" count="4" type="stmt"/>
-        <line num="22" count="4" type="stmt"/>
+        <line num="18" count="9" type="stmt"/>
+        <line num="19" count="9" type="stmt"/>
+        <line num="20" count="9" type="stmt"/>
+        <line num="21" count="9" type="stmt"/>
+        <line num="22" count="9" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
       </file>
@@ -164,8 +181,8 @@
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
+        <line num="4" count="7" type="stmt"/>
+        <line num="5" count="7" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
       </file>
@@ -177,11 +194,11 @@
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="8" count="6" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
       </file>
@@ -196,70 +213,70 @@
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="7" count="4" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
-        <line num="9" count="4" type="stmt"/>
-        <line num="10" count="4" type="stmt"/>
-        <line num="11" count="4" type="stmt"/>
-        <line num="12" count="4" type="stmt"/>
-        <line num="13" count="4" type="stmt"/>
-        <line num="14" count="4" type="stmt"/>
+        <line num="7" count="9" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="9" count="9" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="11" count="9" type="stmt"/>
+        <line num="12" count="9" type="stmt"/>
+        <line num="13" count="9" type="stmt"/>
+        <line num="14" count="9" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.components.TextInput">
-      <metrics statements="67" coveredstatements="59" conditionals="5" coveredconditionals="5" methods="7" coveredmethods="4"/>
+      <metrics statements="67" coveredstatements="62" conditionals="7" coveredconditionals="7" methods="7" coveredmethods="6"/>
       <file name="index.jsx" path="D:\dev\cours-formations\redux cours\exos chatGPT\todolist_react-redux-tdd-vite-vitest\src\components\TextInput\index.jsx">
-        <metrics statements="50" coveredstatements="42" conditionals="3" coveredconditionals="3" methods="5" coveredmethods="2"/>
+        <metrics statements="50" coveredstatements="45" conditionals="5" coveredconditionals="5" methods="5" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="7" count="6" type="stmt"/>
-        <line num="8" count="6" type="cond" truecount="1" falsecount="0"/>
-        <line num="9" count="6" type="stmt"/>
-        <line num="10" count="6" type="cond" truecount="1" falsecount="0"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="6" type="stmt"/>
-        <line num="14" count="6" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="6" type="stmt"/>
-        <line num="19" count="6" type="stmt"/>
-        <line num="20" count="6" type="stmt"/>
-        <line num="21" count="6" type="stmt"/>
-        <line num="22" count="6" type="stmt"/>
-        <line num="23" count="6" type="stmt"/>
-        <line num="24" count="6" type="stmt"/>
-        <line num="25" count="6" type="stmt"/>
-        <line num="26" count="6" type="stmt"/>
-        <line num="27" count="6" type="stmt"/>
-        <line num="28" count="6" type="stmt"/>
-        <line num="29" count="6" type="stmt"/>
-        <line num="30" count="6" type="stmt"/>
+        <line num="7" count="22" type="stmt"/>
+        <line num="8" count="22" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="22" type="stmt"/>
+        <line num="10" count="22" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="13" count="22" type="cond" truecount="1" falsecount="0"/>
+        <line num="14" count="22" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="18" count="22" type="stmt"/>
+        <line num="19" count="22" type="stmt"/>
+        <line num="20" count="22" type="stmt"/>
+        <line num="21" count="22" type="stmt"/>
+        <line num="22" count="22" type="stmt"/>
+        <line num="23" count="22" type="stmt"/>
+        <line num="24" count="22" type="stmt"/>
+        <line num="25" count="22" type="stmt"/>
+        <line num="26" count="22" type="stmt"/>
+        <line num="27" count="22" type="stmt"/>
+        <line num="28" count="22" type="stmt"/>
+        <line num="29" count="22" type="stmt"/>
+        <line num="30" count="22" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
         <line num="33" count="0" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
-        <line num="36" count="6" type="stmt"/>
-        <line num="37" count="6" type="stmt"/>
-        <line num="38" count="6" type="stmt"/>
-        <line num="39" count="6" type="stmt"/>
-        <line num="40" count="6" type="stmt"/>
-        <line num="41" count="6" type="stmt"/>
-        <line num="42" count="6" type="stmt"/>
-        <line num="43" count="6" type="stmt"/>
-        <line num="44" count="6" type="stmt"/>
-        <line num="45" count="6" type="stmt"/>
-        <line num="46" count="6" type="stmt"/>
-        <line num="47" count="6" type="stmt"/>
-        <line num="48" count="6" type="stmt"/>
+        <line num="36" count="22" type="stmt"/>
+        <line num="37" count="22" type="stmt"/>
+        <line num="38" count="22" type="stmt"/>
+        <line num="39" count="22" type="stmt"/>
+        <line num="40" count="22" type="stmt"/>
+        <line num="41" count="22" type="stmt"/>
+        <line num="42" count="22" type="stmt"/>
+        <line num="43" count="22" type="stmt"/>
+        <line num="44" count="22" type="stmt"/>
+        <line num="45" count="22" type="stmt"/>
+        <line num="46" count="22" type="stmt"/>
+        <line num="47" count="22" type="stmt"/>
+        <line num="48" count="22" type="stmt"/>
         <line num="49" count="1" type="stmt"/>
         <line num="50" count="1" type="stmt"/>
       </file>
@@ -274,7 +291,7 @@
         <line num="7" count="1" type="stmt"/>
         <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="10" count="1" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
@@ -285,66 +302,66 @@
       </file>
     </package>
     <package name="src.components.Todo">
-      <metrics statements="25" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="25" coveredstatements="20" conditionals="1" coveredconditionals="1" methods="3" coveredmethods="1"/>
       <file name="index.jsx" path="D:\dev\cours-formations\redux cours\exos chatGPT\todolist_react-redux-tdd-vite-vitest\src\components\Todo\index.jsx">
-        <metrics statements="25" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="25" coveredstatements="20" conditionals="1" coveredconditionals="1" methods="3" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="7" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
+        <line num="11" count="7" type="stmt"/>
+        <line num="12" count="7" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
+        <line num="15" count="7" type="stmt"/>
+        <line num="16" count="7" type="stmt"/>
+        <line num="17" count="7" type="stmt"/>
+        <line num="18" count="7" type="stmt"/>
+        <line num="19" count="7" type="stmt"/>
+        <line num="20" count="7" type="stmt"/>
+        <line num="21" count="7" type="stmt"/>
+        <line num="22" count="7" type="stmt"/>
+        <line num="23" count="7" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
         <line num="25" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.components.TodoList">
-      <metrics statements="46" coveredstatements="39" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="1"/>
+      <metrics statements="46" coveredstatements="46" conditionals="8" coveredconditionals="8" methods="5" coveredmethods="5"/>
       <file name="index.jsx" path="D:\dev\cours-formations\redux cours\exos chatGPT\todolist_react-redux-tdd-vite-vitest\src\components\TodoList\index.jsx">
-        <metrics statements="23" coveredstatements="18" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <metrics statements="23" coveredstatements="23" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="5" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="6" count="4" type="stmt"/>
-        <line num="7" count="4" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
-        <line num="9" count="4" type="stmt"/>
-        <line num="10" count="4" type="stmt"/>
-        <line num="11" count="4" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="17" count="4" type="stmt"/>
-        <line num="18" count="4" type="stmt"/>
-        <line num="19" count="4" type="stmt"/>
-        <line num="20" count="4" type="stmt"/>
-        <line num="21" count="4" type="stmt"/>
+        <line num="5" count="12" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
+        <line num="9" count="12" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
+        <line num="11" count="12" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="12" type="stmt"/>
+        <line num="18" count="12" type="stmt"/>
+        <line num="19" count="12" type="stmt"/>
+        <line num="20" count="12" type="stmt"/>
+        <line num="21" count="12" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
       </file>
       <file name="todoListSlice.js" path="D:\dev\cours-formations\redux cours\exos chatGPT\todolist_react-redux-tdd-vite-vitest\src\components\TodoList\todoListSlice.js">
-        <metrics statements="23" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <metrics statements="23" coveredstatements="23" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -352,15 +369,15 @@
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="5" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
+        <line num="14" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="16" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="17" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
