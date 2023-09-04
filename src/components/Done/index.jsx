@@ -14,7 +14,7 @@ const Done = ({ done, checked, index }) => {
   }
 
   return (
-    <div>
+    <div data-testid="done-list-item">
       {done}{" "}
       <input type="checkbox" checked={checked} onChange={handleUncheck} />
       <i class="fa-solid fa-trash" onClick={handleDelete} />

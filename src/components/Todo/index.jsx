@@ -14,7 +14,7 @@ const Todo = ({ todo, index, checked }) => {
   }
 
   return (
-    <div>
+    <div data-testid="todo-list-item">
       {index + 1} {todo}{" "}
       <input type="checkbox" checked={checked} onChange={handleCheck} />{" "}
       <i class="fa-solid fa-trash" onClick={handleDelete} />

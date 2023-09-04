@@ -1,4 +1,10 @@
-import { fireEvent, render, screen, waitFor } from "@testing-library/react";
+import {
+  fireEvent,
+  render,
+  screen,
+  within,
+  waitFor,
+} from "@testing-library/react";
 import App from "./App";
 
 describe("App", () => {
@@ -25,18 +31,21 @@ describe("App", () => {
     expect(screen.getByDisplayValue(/i should do this task/i)).toBeDefined();
   });
 
-  it("should create todo element when validating text input or clicking create button ", () => {
+  it("should move todo element to done list when checking the box, and inversely", async () => {
     const textInput = screen.getByLabelText("Enter a task to do here");
-    const createButton = screen.getByRole("button", { name: /create/i });
+    const createBtn = screen.getByRole("button", { name: "CREATE TODO" });
     fireEvent.change(textInput, { target: { value: "i should do this task" } });
-    fireEvent.click(createButton);
-    expect(screen.getByText(/i should do this task/i)).toBeDefined();
-    // fireEvent.change(textInput, {
-    //   target: { value: "i should also do that other task" },
-    // });
-    // fireEvent.click(createButton);
-    // expect(screen.getByText(/i should also do that other task/i)).toBeDefined();
-  });
+    fireEvent.click(createBtn);
+    const todoItem = await waitFor(() => screen.getByTestId("todo-list-item"));
+    const todoText = within(todoItem).getByText(/i should do this task/i);
+    expect(todoText).toBeDefined();
 
-  it("should move todo element to done list when checking the box, and inversely ", () => {});
+    const todoCheckbox = within(todoItem).getByRole("checkbox");
+    expect(todoItem).toBeDefined();
+    fireEvent.click(todoCheckbox);
+
+    const doneItem = await waitFor(() => screen.getByTestId("done-list-item"));
+    const doneText = within(doneItem).getByText(/i should do this task/i);
+    expect(doneText).toBeDefined();
+  });
 });
