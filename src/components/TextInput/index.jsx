@@ -18,30 +18,38 @@ const TextInput = () => {
 
   return (
     <>
-      TEXTINPUT COMPONENT :
-      <form>
+      <form className="border-2">
         <label htmlFor="todoTextInput">Enter a task to do here</label>
+        <div>
+          <input
+            type="text"
+            id="todoTextInput"
+            name="todoTextInput"
+            value={textContent}
+            onChange={handleChange}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                e.preventDefault();
+                handleSubmit();
+              }
+            }}
+            size=""
+            className="border-2"
+          />
+          <input
+            type="reset"
+            value="reset"
+            onClick={handleReset}
+            data-testid="reset-btn"
+            className="border-2"
+          />
+        </div>
         <input
-          type="text"
-          id="todoTextInput"
-          name="todoTextInput"
-          value={textContent}
-          onChange={handleChange}
-          onKeyDown={(e) => {
-            if (e.key === "Enter") {
-              e.preventDefault();
-              handleSubmit();
-            }
-          }}
-          required
+          type="button"
+          value="Create TODO"
+          onClick={handleSubmit}
+          className="border-2"
         />
-        <input
-          type="reset"
-          value="reset"
-          onClick={handleReset}
-          data-testid="reset-btn"
-        />
-        <input type="button" value="CREATE TODO" onClick={handleSubmit} />
       </form>
     </>
   );

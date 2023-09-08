@@ -5,17 +5,17 @@ const TodoList = () => {
   const todoList = useSelector((state) => state.todoList);
 
   return (
-    <div>
-      TODOLIST COMPONENT
-      <ul>
+    <div className="">
+      <h2>Todo :</h2>
+      <ol>
         {todoList.map((todo, index) => {
           return (
             <li key={`todo${index}`}>
-              <Todo todo={todo} index={index} checked={false} />
+              <Todo todo={todo} index={index} isChecked={false} />
             </li>
           );
         })}
-      </ul>
+      </ol>
     </div>
   );
 };

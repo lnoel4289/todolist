@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux";
 import * as todoListActions from "../TodoList/todoListSlice";
 import * as doneListActions from "../DoneList/doneListSlice";
 
-const Todo = ({ todo, index, checked }) => {
+const Todo = ({ todo, index, isChecked }) => {
   const dispatch = useDispatch();
   function handleCheck() {
     dispatch(doneListActions.add(todo));
@@ -15,8 +15,8 @@ const Todo = ({ todo, index, checked }) => {
 
   return (
     <div data-testid="todo-list-item">
-      {index + 1} {todo}{" "}
-      <input type="checkbox" checked={checked} onChange={handleCheck} />{" "}
+      {todo}{" "}
+      <input type="checkbox" checked={isChecked} onChange={handleCheck} />{" "}
       <i className="fa-solid fa-trash" onClick={handleDelete} />
     </div>
   );

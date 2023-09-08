@@ -1,10 +1,21 @@
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
-  return <header>HEADER COMPONENT
-    <NavLink to="/">Home</NavLink>
-    <NavLink to="/about">About</NavLink>
-  </header>;
+  return (
+    <header className="flex justify-between bg-slate-100 border-2" >
+      <div>my_TODOList</div>
+      <nav>
+        <ul className="flex">
+          <li>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">About</NavLink>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
 };
 
 export default Header;

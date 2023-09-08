@@ -7,12 +7,12 @@ const DoneList = () => {
 
   return (
     <div>
-      DONELIST COMPONENT
+      <h2>Done :</h2>
       <ul>
         {doneList.map((done, index) => {
           return (
             <li key={`done${index}`}>
-              <Done done={done} index={index} checked={true} />
+              <Done done={done} index={index} isChecked={true} />
             </li>
           );
         })}
