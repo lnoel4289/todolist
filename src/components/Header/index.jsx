@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <header className="flex justify-between bg-slate-100 border-2" >
-      <div>my_TODOList</div>
+      <h1>my_TODOList</h1>
       <nav>
         <ul className="flex">
           <li>
