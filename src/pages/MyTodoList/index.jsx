@@ -1,7 +1,7 @@
 import React from "react";
-import TodoList from "../TodoList";
-import DoneList from "../DoneList";
-import TextInput from "../TextInput";
+import TodoList from "../../components/TodoList";
+import DoneList from "../../components/DoneList";
+import TextInput from "../../components/TextInput";
 
 const HomePage = () => {
   return (

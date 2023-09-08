@@ -2,8 +2,8 @@ import React from "react";
 import { Provider } from "react-redux";
 import store from "./store";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import MyTodoList from "./components/MyTodoList";
-import AboutPage from "./components/AboutPage";
+import MyTodoList from "./pages/MyTodoList";
+import About from "./pages/About";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -15,7 +15,7 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<MyTodoList />} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path="/about" element={<About />} />
         </Routes>
         <Footer />
       </BrowserRouter>
