@@ -1,18 +1,34 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import Todo from "../Todo";
+import * as todoListActions from "../TodoList/todoListSlice";
+import * as doneListActions from "../DoneList/doneListSlice";
 
 const TodoList = () => {
   const todoList = useSelector((state) => state.todoList);
-  
+  const dispatch = useDispatch();
 
   return (
     <div className="">
       <h2>Todo :</h2>
       <ol>
-        {todoList.map((todo, index) => {
+        {todoList.map((elem, index) => {
+          function handleCheck() {
+            dispatch(doneListActions.add(elem));
+            dispatch(todoListActions.remove(index));
+          }
+          function handleDeleteTodo() {
+            dispatch(todoListActions.remove(index));
+          }
           return (
             <li key={`todo${index}`}>
-              <Todo todo={todo} index={index} isChecked={false} />
+              <Todo
+                string={elem}
+                index={index}
+                isChecked={false}
+                handleChange={handleCheck}
+                handleDelete={handleDeleteTodo}
+                testId="todo-list-item"
+              />
             </li>
           );
         })}
