@@ -15,7 +15,7 @@ const DoneList = () => {
       <ul>
         {doneList.map((elem, index) => {
           function handleUncheck() {
-            dispatch(todoListActions.add(done));
+            dispatch(todoListActions.add(elem));
             dispatch(doneListActions.remove(index));
           }
           function handleDeleteDone() {
@@ -25,7 +25,6 @@ const DoneList = () => {
             <li key={`done${index}`}>
               <Todo
                 string={elem}
-                todo={elem}
                 index={index}
                 isChecked={true}
                 handleChange={handleUncheck}
