@@ -11,7 +11,6 @@ const DoneList = () => {
 
   return (
     <div>
-      <h2>Done :</h2>
       <ul>
         {doneList.map((elem, index) => {
           function handleUncheck() {

@@ -9,7 +9,6 @@ const TodoList = () => {
 
   return (
     <div className="">
-      <h2>Todo :</h2>
       <ol>
         {todoList.map((elem, index) => {
           function handleCheck() {
