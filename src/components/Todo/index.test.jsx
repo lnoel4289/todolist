@@ -4,7 +4,7 @@ import Wrapper from "../../Wrapper";
 
 describe("Todo", () => {
   it("should render component according to props", () => {
-    render(<Todo todo="hello" isChecked={true} />, {
+    render(<Todo string="hello" isChecked={true} />, {
       wrapper: Wrapper,
     });
     expect(screen.getByText(/hello/i)).toBeDefined();
