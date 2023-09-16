@@ -7,18 +7,25 @@ const Todo = ({
   index,
 }) => {
   return (
-    <div data-testid={testId} className="flex justify-between border-2 h-14">
-      <div className="border-2 grow">
-        <span className="border-2">{isChecked ? "Done" : "Todo"}</span>
-        <br />
-        {!isChecked && `${index + 1}. `}
-        {string}
+    <article data-testid={testId} className="border-2 m-h-14">
+      <span className="border italic">{isChecked ? "Done" : "Todo"}</span>
+      <div className="flex justify-between">
+        <div className="grow">
+          <p className="border-2">
+            <span>{!isChecked && `${index + 1}. `}</span>
+            {string}
+          </p>
+        </div>
+        <div className="flex items-center space-x-2">
+          <input type="checkbox" checked={isChecked} onChange={handleChange} />{" "}
+          <i
+            className="fa-solid fa-trash Class
+Properties"
+            onClick={handleDelete}
+          />
+        </div>
       </div>
-      <div className="flex items-center">
-        <input type="checkbox" checked={isChecked} onChange={handleChange} />{" "}
-        <i className="fa-solid fa-trash" onClick={handleDelete} />
-      </div>
-    </div>
+    </article>
   );
 };
 

@@ -20,36 +20,37 @@ const TextInput = () => {
     <>
       <form className="border-2">
         <label htmlFor="todoTextInput">Enter a task to do here</label>
-        <div>
+        <div className="flex">
+          <div>
+            <textarea
+              id="todoTextInput"
+              name="todoTextInput"
+              rows="2"
+              value={textContent}
+              onChange={handleChange}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  e.preventDefault();
+                  handleSubmit();
+                }
+              }}
+              className="w-full"
+            />
+            <input
+              type="reset"
+              value="Reset"
+              onClick={handleReset}
+              data-testid="reset-btn"
+              className="border-2 w-full"
+            />
+          </div>
           <input
-            type="text"
-            id="todoTextInput"
-            name="todoTextInput"
-            value={textContent}
-            onChange={handleChange}
-            onKeyDown={(e) => {
-              if (e.key === "Enter") {
-                e.preventDefault();
-                handleSubmit();
-              }
-            }}
-            size=""
-            className="border-2"
-          />
-          <input
-            type="reset"
-            value="reset"
-            onClick={handleReset}
-            data-testid="reset-btn"
-            className="border-2"
+            type="button"
+            value="Create !"
+            onClick={handleSubmit}
+            className="border-2 grow"
           />
         </div>
-        <input
-          type="button"
-          value="Create TODO"
-          onClick={handleSubmit}
-          className="border-2"
-        />
       </form>
     </>
   );

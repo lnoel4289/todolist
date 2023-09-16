@@ -8,8 +8,8 @@ const TodoList = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className="">
-      <ol>
+    <div>
+      <ol className="grid gap-y-2">
         {todoList.map((elem, index) => {
           function handleCheck() {
             dispatch(doneListActions.add(elem));

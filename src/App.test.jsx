@@ -33,7 +33,7 @@ describe("App", () => {
 
   it("should move todo element to done list when checking the box, and inversely", async () => {
     const textInput = screen.getByLabelText("Enter a task to do here");
-    const createBtn = screen.getByRole("button", { name: "Create TODO" });
+    const createBtn = screen.getByRole("button", { name: "Create !" });
     fireEvent.change(textInput, { target: { value: "i should do this task" } });
     fireEvent.click(createBtn);
     const todoItem = await waitFor(() => screen.getByTestId("todo-list-item"));

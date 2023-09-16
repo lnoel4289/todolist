@@ -33,7 +33,7 @@ describe("TextInput", () => {
   });
 
   it("should unslice inputText content to state.todoList array and reset both on submit", () => {
-    const createBtn = screen.getByRole("button", { name: "Create TODO" });
+    const createBtn = screen.getByRole("button", { name: "Create !" });
     const textInput = screen.getByLabelText("Enter a task to do here");
     fireEvent.change(textInput, { target: { value: "i should do this task" } });
     fireEvent.click(createBtn);
