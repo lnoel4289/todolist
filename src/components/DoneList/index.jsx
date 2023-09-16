@@ -11,7 +11,7 @@ const DoneList = () => {
 
   return (
     <div>
-      <ul>
+      <ol>
         {doneList.map((elem, index) => {
           function handleUncheck() {
             dispatch(todoListActions.add(elem));
@@ -33,7 +33,7 @@ const DoneList = () => {
             </li>
           );
         })}
-      </ul>
+      </ol>
     </div>
   );
 };

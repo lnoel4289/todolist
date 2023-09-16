@@ -5,11 +5,11 @@ import TextInput from "../../components/TextInput";
 
 const HomePage = () => {
   return (
-    <div>
+    <main className="px-5">
       <TextInput />
       <TodoList />
       <DoneList />
-    </div>
+    </main>
   );
 };
 

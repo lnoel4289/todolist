@@ -18,10 +18,12 @@ const TextInput = () => {
 
   return (
     <>
-      <form className="border-2">
-        <label htmlFor="todoTextInput">Enter a task to do here</label>
-        <div className="flex">
-          <div>
+      <form>
+        <label htmlFor="todoTextInput">
+          Enter a task to do here <i class="fa-solid fa-arrow-down"></i>
+        </label>
+        <div className="flex border-2 p-1">
+          <div className="w-full border">
             <textarea
               id="todoTextInput"
               name="todoTextInput"
@@ -41,14 +43,14 @@ const TextInput = () => {
               value="Reset"
               onClick={handleReset}
               data-testid="reset-btn"
-              className="border-2 w-full"
+              className="w-full border-t"
             />
           </div>
           <input
             type="button"
             value="Create !"
             onClick={handleSubmit}
-            className="border-2 grow"
+            className="border-2 grow ml-1 px-2"
           />
         </div>
       </form>
