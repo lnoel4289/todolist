@@ -5,7 +5,7 @@ import TextInput from "../../components/TextInput";
 
 const HomePage = () => {
   return (
-    <main className="px-5">
+    <main className="px-5 grid gap-y-4">
       <TextInput />
       <TodoList />
       <DoneList />

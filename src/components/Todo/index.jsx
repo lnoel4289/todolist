@@ -8,7 +8,7 @@ const Todo = ({
 }) => {
   return (
     <article data-testid={testId} className="border-2 m-h-14">
-      <span className="border italic">{isChecked ? "Done" : "Todo"}</span>
+      <span className="border italic">{isChecked ? "Done !" : "Todo"}</span>
       <div className="flex justify-between">
         <div className="grow">
           <p className="border-2">

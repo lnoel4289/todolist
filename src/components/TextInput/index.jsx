@@ -13,7 +13,6 @@ const TextInput = () => {
   const handleReset = () => dispatch(textInputActions.change(""));
   const handleSubmit = () => {
     dispatch(todoListActions.add(textContent));
-    handleReset();
   };
 
   return (

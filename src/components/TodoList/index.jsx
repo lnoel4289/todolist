@@ -8,7 +8,7 @@ const TodoList = () => {
   const dispatch = useDispatch();
 
   return (
-    <div>
+    <section>
       <ol className="grid gap-y-2">
         {todoList.map((elem, index) => {
           function handleCheck() {
@@ -32,7 +32,7 @@ const TodoList = () => {
           );
         })}
       </ol>
-    </div>
+    </section>
   );
 };
 

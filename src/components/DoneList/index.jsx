@@ -10,8 +10,8 @@ const DoneList = () => {
   const doneList = useSelector((state) => state.doneList);
 
   return (
-    <div>
-      <ol>
+    <section>
+      <ul className="grid gap-y-2">
         {doneList.map((elem, index) => {
           function handleUncheck() {
             dispatch(todoListActions.add(elem));
@@ -33,8 +33,8 @@ const DoneList = () => {
             </li>
           );
         })}
-      </ol>
-    </div>
+      </ul>
+    </section>
   );
 };
 
