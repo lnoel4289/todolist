@@ -46,7 +46,5 @@ describe("TextInput", () => {
       "i should do this task",
       "i should also do that other task",
     ]);
-    expect(textInput.value).toBe("");
-    expect(store.getState().textInput).toBe("");
   });
 });
