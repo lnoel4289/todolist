@@ -21,7 +21,7 @@ const TextInput = () => {
         <label htmlFor="todoTextInput">
           Enter a task to do here <i class="fa-solid fa-arrow-down"></i>
         </label>
-        <div className="flex border-2 p-1">
+        <div className="flex border-2 p-1 shadow-sm">
           <div className="w-full border">
             <textarea
               id="todoTextInput"
@@ -39,10 +39,10 @@ const TextInput = () => {
             />
             <input
               type="reset"
-              value="Reset"
+              value="Clear"
               onClick={handleReset}
               data-testid="reset-btn"
-              className="w-full border-t"
+              className="w-full border-t rounded "
             />
           </div>
           <input
