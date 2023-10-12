@@ -1,7 +1,6 @@
 import TodoList from ".";
 import { render, screen } from "@testing-library/react";
 import Wrapper from "../../Wrapper";
-import Todo from "../Todo";
 
 describe("TodoList", () => {
   const state = {
