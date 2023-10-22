@@ -2,12 +2,15 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    fontFamily: {
-      indie: ["Indie Flower"],
-      roboto: ["Roboto"],
-      'indie': ['Indie Flower']
+    extend: {
+      fontFamily: {
+        indie: ["Indie Flower"],
+        roboto: ["Roboto"],
+      },
+      minHeight: {
+        38: "38px",
+      },
     },
-    extend: {},
   },
   plugins: ["prettier-plugin-tailwindcss"],
 };

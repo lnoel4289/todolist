@@ -6,7 +6,7 @@ const Todo = ({
   testId,
   index,
 }) => {
-  const baseArticleStyle = "m-h-14 p-1 rounded border shadow";
+  const baseArticleStyle = "p-1 rounded border shadow";
   const undoneArticleStyle = "bg-orange-300 border-orange-500";
   const doneArticleStyle = "bg-green-300 border-green-500";
   const baseParagStyle =
@@ -35,7 +35,7 @@ const Todo = ({
       >
         {isChecked ? "Done !" : "Todo"}
       </span>
-      <div className="flex justify-between">
+      <div className="flex justify-between min-h-38">
         <p
           className={
             isChecked
