@@ -6,15 +6,15 @@ const Todo = ({
   testId,
   index,
 }) => {
-  const baseArticleStyle = "p-1 rounded border shadow";
-  const undoneArticleStyle = "bg-orange-300 border-orange-500";
+  const baseArticleStyle = "p-1 rounded border shadow-lg";
+  const undoneArticleStyle = "bg-blue-300 border-blue-500";
   const doneArticleStyle = "bg-green-300 border-green-500";
   const baseParagStyle =
     "grow border p-1 break-words hyphens-auto mt-1 font-indie text-xl";
-  const undoneParagStyle = "bg-orange-100 border-orange-500";
+  const undoneParagStyle = "bg-blue-100 border-blue-500";
   const doneParagStyle = "bg-green-100 border-green-500";
   const baseSpanStyle = "italic px-3 rounded border";
-  const undoneSpanStyle = "text-orange-100 bg-orange-500 border-orange-100";
+  const undoneSpanStyle = "text-blue-100 bg-blue-500 border-blue-100";
   const doneSpanStyle = "text-green-100 bg-green-500 border-green-100";
 
   return (
