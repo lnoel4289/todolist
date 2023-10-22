@@ -8,7 +8,7 @@ const TodoList = () => {
   const dispatch = useDispatch();
 
   return (
-    <section>
+    <section className="">
       <ol className="grid gap-y-2">
         {todoList.map((elem, index) => {
           function handleCheck() {

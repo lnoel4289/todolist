@@ -10,7 +10,7 @@ const Todo = ({
   const undoneArticleStyle = "bg-blue-300 border-blue-500";
   const doneArticleStyle = "bg-green-300 border-green-500";
   const baseParagStyle =
-    "grow border p-1 break-words hyphens-auto mt-1 font-indie text-xl";
+    "grow border p-1 break-words hyphens-auto mt-1 font-indie text-2xl";
   const undoneParagStyle = "bg-blue-100 border-blue-500";
   const doneParagStyle = "bg-green-100 border-green-500";
   const baseSpanStyle = "italic px-3 rounded border";
