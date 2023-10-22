@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         indie: ["Indie Flower"],
         roboto_mono: ["Roboto Mono"],
+        pacifico: ["Pacifico"],
       },
       minHeight: {
         38: "38px",

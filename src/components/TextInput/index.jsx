@@ -18,7 +18,7 @@ const TextInput = () => {
   return (
     <>
       <form>
-        <label htmlFor="todoTextInput" className="p-1 font-semibold">
+        <label htmlFor="todoTextInput" className="p-1 font-semibold text-white">
           Enter a task to do here <i className="fa-solid fa-arrow-down"></i>
         </label>
         <div className="flex border border-white bg-transparent p-1">
@@ -26,7 +26,7 @@ const TextInput = () => {
             <textarea
               id="todoTextInput"
               name="todoTextInput"
-              rows="2"
+              rows="1"
               value={textContent}
               onChange={handleChange}
               onKeyDown={(e) => {
@@ -35,7 +35,7 @@ const TextInput = () => {
                   handleSubmit();
                 }
               }}
-              className="h-11 w-full border border-black p-2"
+              className="h-11 sm:h-14 w-full border border-black p-2"
             />
             <input
               type="reset"
