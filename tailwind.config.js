@@ -11,10 +11,10 @@ export default {
         38: "38px",
       },
       backgroundImage: {
-        clouds: "url('/src/assets/pexels-sergey-makashin-5444995.jpg')",
+        portrait: "url('/src/assets/pexels-sergey-makashin-5444995.webp')",
       },
       colors: {
-        'sky': "#7390B8"
+        sky: "#7390B8",
       },
     },
   },
