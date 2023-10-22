@@ -17,7 +17,7 @@ const TextInput = () => {
 
   return (
     <>
-      <form className="text-xl">
+      <form>
         <label htmlFor="todoTextInput" className="p-1 font-semibold">
           Enter a task to do here <i className="fa-solid fa-arrow-down"></i>
         </label>
@@ -35,7 +35,7 @@ const TextInput = () => {
                   handleSubmit();
                 }
               }}
-              className="w-full border border-black p-2"
+              className="h-11 w-full border border-black p-2"
             />
             <input
               type="reset"
@@ -47,9 +47,9 @@ const TextInput = () => {
           </div>
           <input
             type="button"
-            value="Create !"
+            value="Create"
             onClick={handleSubmit}
-            className="w-28 border-2 border-black rounded bg-green-500 grow ml-1 px-2 text-white font-semibold"
+            className="border-2 border-black rounded bg-green-500 grow ml-1 px-2 text-white font-semibold"
           />
         </div>
       </form>

@@ -3,9 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        xs: "320px",
+      },
       fontFamily: {
         indie: ["Indie Flower"],
-        roboto: ["Roboto"],
+        roboto_mono: ["Roboto Mono"],
       },
       minHeight: {
         38: "38px",
