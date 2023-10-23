@@ -18,7 +18,7 @@ const TextInput = () => {
   return (
     <>
       <form>
-        <label htmlFor="todoTextInput" className="p-1 font-semibold text-white">
+        <label htmlFor="todoTextInput" className="p-1 font-semibold">
           Enter a task to do here <i className="fa-solid fa-arrow-down"></i>
         </label>
         <div className="flex border border-white bg-transparent p-1">
