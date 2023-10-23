@@ -21,7 +21,7 @@ const TextInput = () => {
         <label htmlFor="todoTextInput" className="p-1 font-semibold">
           Enter a task to do here <i className="fa-solid fa-arrow-down"></i>
         </label>
-        <div className="flex border border-white bg-transparent p-1">
+        <div className="flex border border-white bg-transparent p-1 mt-1">
           <div className="w-full">
             <textarea
               id="todoTextInput"
