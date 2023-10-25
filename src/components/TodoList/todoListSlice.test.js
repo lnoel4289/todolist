@@ -2,7 +2,7 @@ import todoListReducer from "./todoListSlice";
 import * as todoListActions from "./todoListSlice";
 
 describe("todoList reducer", () => {
-  it("should add textContent to top of todoList array when action is add", () => {
+  it("should add textContent to bottom of todoList array when action is add", () => {
     expect(todoListReducer([], todoListActions.add("hello"))).toEqual([
       "hello",
     ]);

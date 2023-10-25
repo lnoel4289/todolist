@@ -1,7 +1,7 @@
 import TextInput from ".";
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import store from "../../store";
-import Wrapper from "../../Wrapper";
+import Wrapper from "../../testsUtils/Wrapper";
 
 /**
  * SPECIFICATIONS

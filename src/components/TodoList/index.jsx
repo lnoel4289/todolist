@@ -8,11 +8,11 @@ const TodoList = () => {
   const dispatch = useDispatch();
 
   return (
-    <section className="">
+    <section>
       <ol className="grid gap-y-2">
-        {todoList.map((elem, index) => {
+        {todoList.map((todoListElement, index) => {
           function handleCheck() {
-            dispatch(doneListActions.add(elem));
+            dispatch(doneListActions.add(todoListElement));
             dispatch(todoListActions.remove(index));
           }
           function handleDeleteTodo() {
@@ -21,12 +21,11 @@ const TodoList = () => {
           return (
             <li key={`todo${index}`}>
               <Todo
-                string={elem}
+                string={todoListElement}
                 index={index}
                 isChecked={false}
                 handleChange={handleCheck}
                 handleDelete={handleDeleteTodo}
-                testId="todo-list-item"
               />
             </li>
           );

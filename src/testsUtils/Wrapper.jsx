@@ -1,7 +1,6 @@
-
 import { Provider } from "react-redux";
 import { MemoryRouter } from "react-router-dom";
-import store from "./store";
+import store from "../store";
 
 const Wrapper = ({ children }) => {
   return (

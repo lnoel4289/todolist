@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import Todo from ".";
-import Wrapper from "../../Wrapper";
+import Wrapper from "../../testsUtils/Wrapper";
 
 describe("Todo", () => {
   it("should render component according to props", () => {
