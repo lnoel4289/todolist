@@ -11,7 +11,7 @@ describe("DoneList", () => {
     render(<DoneList />, { wrapper: Wrapper });
   });
 
-  it("", () => {
+  it("should display every Done Component from strings being in state.doneList into the DoneList component", () => {
     const done1 = screen.getByText(/done1/i);
     expect(done1).toBeDefined();
     const done2 = screen.getByText(/done2/i);

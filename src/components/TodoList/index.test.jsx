@@ -11,10 +11,11 @@ describe("TodoList", () => {
     render(<TodoList />, { wrapper: Wrapper });
   });
 
-  it("", () => {
+  it("should display every Todo Component from from strings being in state.todoList into the TodoList component", () => {
     const todo1 = screen.getByText(/todo1/i);
     expect(todo1).toBeDefined();
     const todo2 = screen.getByText(/todo2/i);
     expect(todo2).toBeDefined();
   });
+
 });
