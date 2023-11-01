@@ -59,17 +59,17 @@ To deploy this project run
 
 ## Roadmap
 
-- increase checkbox and trash size
-
-- allow editing existing Todo's and Tone's
-
-- use cookie and/or local storage and/or node backend
-
 - add confirming and/or cancelling delete
+
+- use cookie and/or local storage
+
+- allow editing existing Todo's and Done's
 
 - add dark mode
 
 - add FR/EN language mode
+
+- allow user to sign up and add backend
 
 - allow to move elements manually inside lists (drag'n drop)
 
