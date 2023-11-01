@@ -10,7 +10,7 @@ const Todo = ({
   const undoneArticleStyle = "bg-blue-300 border-blue-500";
   const doneArticleStyle = "bg-green-300 border-green-500";
   const baseParagStyle =
-    "grow border p-1 break-words hyphens-auto mt-1 font-indie sm:text-2xl";
+    "grow border px-1 break-words hyphens-auto font-indie text-lg xs:text-xl sm:text-2xl";
   const undoneParagStyle = "bg-blue-100 border-blue-500";
   const doneParagStyle = "bg-green-100 border-green-500";
   const baseSpanStyle = "italic px-3 rounded border";
@@ -35,7 +35,7 @@ const Todo = ({
       >
         {isChecked ? "Done !" : "Todo"}
       </span>
-      <div className="flex justify-between min-h-38">
+      <div className="flex justify-between mt-1">
         <p
           className={
             isChecked
@@ -45,17 +45,20 @@ const Todo = ({
         >
           {isChecked ? `` : index + 1 + `.`} {string}
         </p>
-        <div className="flex items-center space-x-2 p-1">
-          <input
-            type="checkbox"
-            id="todoCheckbox"
-            checked={isChecked}
-            onChange={handleChange}
-          />{" "}
-          <i
-            className="fa-solid fa-trash Class Properties"
-            onClick={handleDelete}
-          />
+        <div className="flex items-center space-x-2 px-1 pl-2">
+          <label
+            htmlFor={isChecked ? `done${index}` : `todo${index}`}
+            className="relative w-8 h-8 bg-white border rounded border-blue-500"
+          >
+            <input
+              type="checkbox"
+              id={isChecked ? `done${index}` : `todo${index}`}
+              checked={isChecked}
+              onChange={handleChange}
+              className="invisible"
+            /><span className={isChecked ? `absolute top-0 left-0 rounded-sm bg-green-500 w-full h-full after:content-[''] after:absolute after:left-1.5 after:top-1.5 after:w-5 after:h-3 after:border-white after:border-b-4 after:border-l-4 after:-rotate-45` : ``}></span>
+          </label>
+          <i className="fa-solid fa-trash text-3xl" onClick={handleDelete} />
         </div>
       </div>
     </article>
