@@ -1,7 +1,7 @@
 
 # my_TODOList
 
-A todo-list project using React + Vite + Vitest(jest) + Redux + TailwindCSS, aiming to train myself to use them.
+A todo-list project using React + Vite + Vitest(jest) + Redux + TailwindCSS, in order to train myself using them.
 
 ## Demo
 
@@ -59,6 +59,8 @@ To deploy this project run
 
 ## Roadmap
 
+- hover & focus effects
+
 - add confirming and/or cancelling delete
 
 - use cookie and/or local storage
@@ -69,8 +71,10 @@ To deploy this project run
 
 - add FR/EN language mode
 
-- allow user to sign up and add backend
+- add backend to allow user to sign up
 
-- allow to move elements manually inside lists (drag'n drop)
+- allow to move elements manually within lists (drag'n drop)
 
 - allow to move elements manually between lists (drag'n drop)
+
+- scroll up arrow
