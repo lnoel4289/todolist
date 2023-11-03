@@ -1,6 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = []
+const initialState = () => {
+  const item = JSON.parse(localStorage.getItem("item"));
+  if (item) {
+  } else {
+    return [];
+  }
+};
 
 const doneListSlice = createSlice({
   name: "doneList",
