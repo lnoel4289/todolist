@@ -1,16 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = () => {
-  const item = JSON.parse(localStorage.getItem("item"));
-  if (item) {
-  } else {
-    return "";
-  }
+const getInitialState = () => {
+  const item = localStorage.getItem("item");
+  return item || "";
 };
 
 const textInputSlice = createSlice({
   name: "textInput",
-  initialState: initialState,
+  initialState: getInitialState(),
   reducers: {
     change: {
       prepare: (textValue) => ({ payload: { textValue } }),

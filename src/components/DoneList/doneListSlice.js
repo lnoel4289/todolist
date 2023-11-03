@@ -1,16 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = () => {
+const getInitialState = () => {
   const item = JSON.parse(localStorage.getItem("item"));
-  if (item) {
-  } else {
-    return [];
-  }
+  return item || [];
 };
 
 const doneListSlice = createSlice({
   name: "doneList",
-  initialState: initialState,
+  initialState: getInitialState(),
   reducers: {
     add: {
       prepare: (textContent) => ({ payload: { textContent } }),
