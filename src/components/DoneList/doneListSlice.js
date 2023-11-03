@@ -1,8 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const initialState = []
+
 const doneListSlice = createSlice({
   name: "doneList",
-  initialState: [],
+  initialState: initialState,
   reducers: {
     add: {
       prepare: (textContent) => ({ payload: { textContent } }),

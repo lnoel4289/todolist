@@ -1,8 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const initialState = ""
+
 const textInputSlice = createSlice({
   name: "textInput",
-  initialState: "",
+  initialState: initialState,
   reducers: {
     change: {
       prepare: (textValue) => ({ payload: { textValue } }),

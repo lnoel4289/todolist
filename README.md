@@ -1,7 +1,7 @@
 
 # my_TODOList
 
-A todo-list project using React + Vite + Vitest(jest) + Redux + TailwindCSS, in order to train myself using them.
+A to-do list project using React + Vite + Vitest(jest) + Redux + TailwindCSS, in order to train myself using them.
 
 ## Demo
 
@@ -9,7 +9,7 @@ A todo-list project using React + Vite + Vitest(jest) + Redux + TailwindCSS, in 
 
 ## Tech Stack
 
-React, Vite, Vitest, Redux, TailwindCSS, Netlify
+React, Vite, Vitest, Redux, TailwindCSS
 
 ## Run Locally
 
