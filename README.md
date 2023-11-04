@@ -61,6 +61,8 @@ To deploy this project run
 
 - main page warning about using local storage
 
+- test local storage usage in TodoList, Done, TextInput and their slices
+
 - hover & focus effects
 
 - add confirming and/or cancelling delete
