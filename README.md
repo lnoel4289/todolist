@@ -59,11 +59,11 @@ To deploy this project run
 
 ## Roadmap
 
+- main page warning about using local storage
+
 - hover & focus effects
 
 - add confirming and/or cancelling delete
-
-- use cookie and/or local storage
 
 - allow editing existing Todo's and Done's
 

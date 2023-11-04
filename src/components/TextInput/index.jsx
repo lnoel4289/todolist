@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import * as textInputActions from "../TextInput/textInputSlice";
 import * as todoListActions from "../TodoList/todoListSlice";
 import { useDispatch, useSelector } from "react-redux";
@@ -7,10 +7,16 @@ const TextInput = () => {
   const dispatch = useDispatch();
   const textContent = useSelector((state) => state.textInput);
 
+  useEffect(() => {
+    localStorage.setItem("textContent", textContent);
+  }, [textContent]);
+
   const handleChange = (e) => {
     dispatch(textInputActions.change(e.target.value));
   };
+
   const handleReset = () => dispatch(textInputActions.change(""));
+
   const handleSubmit = () => {
     dispatch(todoListActions.add(textContent));
   };

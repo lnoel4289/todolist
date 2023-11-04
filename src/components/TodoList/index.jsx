@@ -1,4 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
 import Todo from "../Todo";
 import * as todoListActions from "../TodoList/todoListSlice";
 import * as doneListActions from "../DoneList/doneListSlice";
@@ -6,6 +7,10 @@ import * as doneListActions from "../DoneList/doneListSlice";
 const TodoList = () => {
   const todoList = useSelector((state) => state.todoList);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    localStorage.setItem("todoList", JSON.stringify(todoList));
+  }, [todoList]);
 
   return (
     <section>

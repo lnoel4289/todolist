@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const getInitialState = () => {
-  const item = localStorage.getItem("item");
-  return item || "";
+  const textContent = localStorage.getItem("textContent");
+  return textContent || "";
 };
 
 const textInputSlice = createSlice({
