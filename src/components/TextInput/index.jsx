@@ -19,6 +19,7 @@ const TextInput = () => {
 
   const handleSubmit = () => {
     dispatch(todoListActions.add(textContent));
+    handleReset();
   };
 
   return (
