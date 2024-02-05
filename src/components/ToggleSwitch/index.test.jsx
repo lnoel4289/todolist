@@ -1,6 +1,5 @@
 import { render, screen } from "@testing-library/react";
 import ToggleSwitch from ".";
-// import { beforeEach } from "vitest";
 
 describe("ToggleSwitch", () => {
   beforeEach(() => {
