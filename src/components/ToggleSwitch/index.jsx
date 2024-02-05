@@ -1,4 +1,4 @@
-const ToggleSwitch = ({ id, text }) => {
+const ToggleSwitch = ({ id, text, isChecked, handleChange }) => {
   return (
     <div className="flex items-center justify-center">
       <label htmlFor={id} className="relative h-4 w-8">
