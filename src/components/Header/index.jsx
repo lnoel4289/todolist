@@ -33,7 +33,7 @@ const Header = () => {
           </ul>
         </nav>
         <div className="grid grid-cols-2">
-          <ToggleSwitch id="tgl-lng" text="EN" isChecked="" handleChange="" />
+          <ToggleSwitch id="tgl-lng" text="FR" isChecked="" handleChange="" />
           <ToggleSwitch id="tgl-drk" text="🌙" isChecked="" handleChange="" />
         </div>
       </div>
