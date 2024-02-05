@@ -9,16 +9,7 @@ const langSlice = createSlice({
   name: "lang",
   initialState: getInitialState(),
   reducers: {
-    change: (state) => {
-      if (state === "en") {
-        state = "fr";
-        return;
-      } else if (state === "fr") {
-        state = "en";
-        return;
-      }
-      return;
-    },
+    change: (state) => (state === "en" ? "fr" : "en"),
   },
 });
 
