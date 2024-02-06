@@ -51,12 +51,14 @@ const Header = () => {
             text="FR"
             state={lang}
             handleChange={toggleLang}
+            isChecked={lang === "en" ? false : true}
           />
           <ToggleSwitch
             id="mode"
             text="🌙"
             state={mode}
             handleChange={toggleMode}
+            isChecked={mode === "light" ? false : true}
           />
         </div>
       </div>

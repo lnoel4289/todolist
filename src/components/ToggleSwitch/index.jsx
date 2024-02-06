@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const ToggleSwitch = ({ id, text, state, handleChange }) => {
+const ToggleSwitch = ({ id, text, state, handleChange, isChecked }) => {
   useEffect(() => {
     localStorage.setItem(id, state);
   },[state]);
@@ -11,6 +11,7 @@ const ToggleSwitch = ({ id, text, state, handleChange }) => {
         <input
           type="checkbox"
           id={id}
+          checked = {isChecked}
           onChange={handleChange}
           className="w-0 h-0 opacity-0 peer"
         ></input>
