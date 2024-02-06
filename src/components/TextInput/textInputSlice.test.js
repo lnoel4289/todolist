@@ -1,20 +1,10 @@
 import textInputReducer from "./textInputSlice";
-import * as textInputActions from "./textInputSlice";
-
-/**
- * SPECS
- *
- * Given text input and textContent state
- * When user changes text content in the input
- * Then update textContent state
- *
- */
+import { change } from "./textInputSlice";
 
 describe("textInputSlice", () => {
   it("should update TextContent when action is change", () => {
-    let state = "";
-    expect(textInputReducer(state, textInputActions.change("hello"))).toBe(
-      "hello"
-    );
+    const initialState = "";
+    const newState = textInputReducer(initialState, change("hello"));
+    expect(newState).toBe("hello");
   });
 });
