@@ -5,6 +5,7 @@ const ToggleSwitch = ({ id, text, isChecked, handleChange }) => {
         <input
           type="checkbox"
           id={id}
+          onChange={handleChange}
           className="w-0 h-0 opacity-0 peer"
         ></input>
         <span className="absolute inset-0 bg-gray-300 rounded-full cursor-pointer before:flex before:absolute before:w-3 before:h-3 before:rounded-full before:bg-white before:top-0.5 before:left-0.5 before:duration-300 before:peer-checked:translate-x-4"></span>
