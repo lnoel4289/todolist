@@ -1,4 +1,10 @@
-const ToggleSwitch = ({ id, text, isChecked, handleChange }) => {
+import { useEffect } from "react";
+
+const ToggleSwitch = ({ id, text, state, handleChange }) => {
+  useEffect(() => {
+    localStorage.setItem(id, state);
+  },[state]);
+
   return (
     <div className="flex items-center justify-center">
       <label htmlFor={id} className="relative h-4 w-8">

@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const getInitialState = () => {
-  const mode = JSON.parse(localStorage.getItem("mode"));
+  const mode = localStorage.getItem("mode");
   return mode || "light";
 };
 

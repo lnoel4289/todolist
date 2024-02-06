@@ -1,11 +1,13 @@
 import { NavLink } from "react-router-dom";
 import ToggleSwitch from "../ToggleSwitch";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import * as langActions from "../ToggleSwitch/langSlice";
 import * as modeActions from "../ToggleSwitch/modeSlice";
 
 const Header = () => {
   const dispatch = useDispatch();
+  const lang = useSelector((state) => state.lang);
+  const mode = useSelector(state => state.mode);
   const toggleLang = () => {
     dispatch(langActions.change());
   };
@@ -45,15 +47,15 @@ const Header = () => {
         </nav>
         <div className="grid grid-cols-2">
           <ToggleSwitch
-            id="tgl-lng"
+            id="lang"
             text="FR"
-            isChecked=""
+            state={lang}
             handleChange={toggleLang}
           />
           <ToggleSwitch
-            id="tgl-drk"
+            id="mode"
             text="🌙"
-            isChecked=""
+            state={mode}
             handleChange={toggleMode}
           />
         </div>

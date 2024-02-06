@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const getInitialState = () => {
-  const lang = JSON.parse(localStorage.getItem("lang"));
+  const lang = localStorage.getItem("lang");
   return lang || "en";
 };
 
