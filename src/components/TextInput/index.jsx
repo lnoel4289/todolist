@@ -25,15 +25,13 @@ const TextInput = () => {
   return (
     <>
       <form>
-        <label htmlFor="todoTextInput" className="p-1 font-semibold">
-          Enter a task to do here <i className="fa-solid fa-arrow-down"></i>
-        </label>
-        <div className="flex bg-black rounded p-1 mt-1">
+        <div className="flex bg-white rounded p-1 mt-1">
           <div className="w-full">
             <textarea
               id="todoTextInput"
               name="todoTextInput"
               rows="1"
+              placeholder="Write a to-do here"
               value={textContent}
               onChange={handleChange}
               onKeyDown={(e) => {
@@ -42,7 +40,7 @@ const TextInput = () => {
                   handleSubmit();
                 }
               }}
-              className="h-11 sm:h-14 w-full p-2 rounded"
+              className="h-11 sm:h-14 w-full p-2 rounded border-2"
             />
             <input
               type="reset"
@@ -56,7 +54,7 @@ const TextInput = () => {
             type="button"
             value="Create"
             onClick={handleSubmit}
-            className="rounded-xl bg-blue-600 grow ml-1 px-2 text-white font-semibold"
+            className="rounded-xl bg-blue-500 grow ml-1 px-2 text-white font-semibold"
           />
         </div>
       </form>

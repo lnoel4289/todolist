@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <div className={mode === "dark" ? "dark" : ""}>
-      <footer className="flex items-center px-5 bg-black text-white h-11">
+      <footer className="flex items-center px-5 bg-gray-500 text-white h-11">
         © Laurent Noel - 2023
       </footer>
     </div>
