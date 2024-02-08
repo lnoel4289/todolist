@@ -7,7 +7,7 @@ import * as modeActions from "../ToggleSwitch/modeSlice";
 const Header = () => {
   const dispatch = useDispatch();
   const lang = useSelector((state) => state.lang);
-  const mode = useSelector(state => state.mode);
+  const mode = useSelector((state) => state.mode);
   const toggleLang = () => {
     dispatch(langActions.change());
   };

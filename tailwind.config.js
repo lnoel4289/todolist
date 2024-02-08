@@ -26,5 +26,6 @@ export default {
       },
     },
   },
+  darkMode: "class",
   plugins: ["prettier-plugin-tailwindcss"],
 };

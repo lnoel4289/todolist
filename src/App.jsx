@@ -10,17 +10,17 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <Provider store={store}>
-    <React.StrictMode>
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<MyTodoList />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-    </React.StrictMode>
-  </Provider>
+      <React.StrictMode>
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<MyTodoList />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </React.StrictMode>
+    </Provider>
   );
 };
 
