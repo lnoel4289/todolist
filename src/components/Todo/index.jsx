@@ -8,11 +8,11 @@ const Todo = ({
 }) => {
   const baseArticleStyle = "p-1 rounded shadow-lg";
   const undoneArticleStyle = "bg-blue-300";
-  const doneArticleStyle = "bg-gray-300";
+  const doneArticleStyle = "bg-gray-400";
   const baseParagStyle =
     "grow px-1 break-words hyphens-auto font-indie text-lg xs:text-xl sm:text-2xl";
-  const undoneParagStyle = "bg-blue-100";
-  const doneParagStyle = "bg-gray-100";
+  const undoneParagStyle = "bg-blue-100 dark:bg-blue-500 dark:text-gray-100";
+  const doneParagStyle = "bg-gray-100 dark:bg-gray-500 dark:text-gray-100";
   const baseSpanStyle = "italic px-3 rounded border";
   const undoneSpanStyle = "text-blue-100 bg-blue-500 border-blue-100";
   const doneSpanStyle = "text-gray-100 bg-gray-500 border-gray-100";

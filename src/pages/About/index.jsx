@@ -4,8 +4,8 @@ const AboutPage = () => {
   const mode = useSelector((state) => state.mode);
 
   return (
-    <div className={mode === "dark" ? "grow dark" : "grow"}>
-      <main className="px-5 sm:px-10 font-indie text-sm xs:text-lg sm:text-3xl">
+    <div className={mode === "dark" ? "grow dark bg-gray-700" : "grow"}>
+      <main className="px-5 sm:px-10 font-indie text-sm xs:text-lg sm:text-3xl dark:text-gray-300">
         <p className="mt-2 xs:mt-5">
           Welcome to this to-do list single page application !
         </p>

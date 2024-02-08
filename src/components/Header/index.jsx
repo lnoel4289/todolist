@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <div className={mode === "dark" ? "dark" : ""}>
-      <header className="z-10 h-14 xs:h-14 sm:h-20 flex justify-between items-center sticky top-0 left-0 right-0 px-5 shadow-scan59 shadow-gray-400">
+      <header className="z-10 h-14 xs:h-14 sm:h-20 flex justify-between items-center sticky top-0 left-0 right-0 px-5 shadow-scan59 shadow-gray-400 dark:shadow-none dark:bg-gray-800 dark:text-gray-300">
         <h1 className="sm:relative top-4 sm:h-16 grow-[2] xs:grow-[5] sm:grow-[8] font-pacifico text-lg xs:text-2xl sm:text-4xl">
           my_TODOList
         </h1>
