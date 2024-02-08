@@ -5,7 +5,7 @@ const AboutPage = () => {
 
   return (
     <div className={mode === "dark" ? "grow dark" : "grow"}>
-      <main className="px-5 sm:px-10 font-indie text-sm xs:text-lg sm:text-3xl text-white">
+      <main className="px-5 sm:px-10 font-indie text-sm xs:text-lg sm:text-3xl">
         <p className="mt-2 xs:mt-5">
           Welcome to this to-do list single page application !
         </p>

@@ -28,7 +28,7 @@ const TextInput = () => {
         <label htmlFor="todoTextInput" className="p-1 font-semibold">
           Enter a task to do here <i className="fa-solid fa-arrow-down"></i>
         </label>
-        <div className="flex border border-white bg-transparent p-1 mt-1">
+        <div className="flex bg-black rounded p-1 mt-1">
           <div className="w-full">
             <textarea
               id="todoTextInput"
@@ -42,21 +42,21 @@ const TextInput = () => {
                   handleSubmit();
                 }
               }}
-              className="h-11 sm:h-14 w-full border border-black p-2"
+              className="h-11 sm:h-14 w-full p-2 rounded"
             />
             <input
               type="reset"
               value="Clear"
               onClick={handleReset}
               data-testid="reset-btn"
-              className="w-full border-2 border-black rounded text-white font-semibold bg-red-500"
+              className="w-full rounded-md text-white font-semibold bg-red-500"
             />
           </div>
           <input
             type="button"
             value="Create"
             onClick={handleSubmit}
-            className="border-2 border-black rounded bg-green-500 grow ml-1 px-2 text-white font-semibold"
+            className="rounded-xl bg-blue-600 grow ml-1 px-2 text-white font-semibold"
           />
         </div>
       </form>
