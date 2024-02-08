@@ -2,14 +2,19 @@ import React from "react";
 import TodoList from "../../components/TodoList";
 import DoneList from "../../components/DoneList";
 import TextInput from "../../components/TextInput";
+import { useSelector } from "react-redux";
 
 const HomePage = () => {
+  const mode = useSelector((state) => state.mode);
+
   return (
-    <main className="px-5 grid grow gap-y-10 py-2 flex-col content-start">
-      <TextInput />
-      <TodoList />
-      <DoneList />
-    </main>
+    <div className={mode === "dark" ? "grow dark" : "grow"}>
+      <main className="px-5 grid gap-y-10 py-2 flex-col content-start">
+        <TextInput />
+        <TodoList />
+        <DoneList />
+      </main>
+    </div>
   );
 };
 
