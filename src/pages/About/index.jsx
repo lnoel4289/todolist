@@ -15,8 +15,7 @@ const AboutPage = () => {
         </p>
         <br />
         <p className="mt-2 xs:mt-5">
-          Please don't write here any sensible information, as this app use your
-          browser's local storage which, may be read by third party.
+          Please don't write here any sensible information, as this app use your browser's local storage which, may be read by third party.
         </p>
         <br />
         <p>Have good to-do's !</p>
