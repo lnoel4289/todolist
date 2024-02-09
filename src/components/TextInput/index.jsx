@@ -3,7 +3,7 @@ import * as textInputActions from "../TextInput/textInputSlice";
 import * as todoListActions from "../TodoList/todoListSlice";
 import { useDispatch, useSelector } from "react-redux";
 
-const TextInput = () => {
+const TextInput = ({ text }) => {
   const dispatch = useDispatch();
   const textContent = useSelector((state) => state.textInput);
 
@@ -31,7 +31,7 @@ const TextInput = () => {
               id="todoTextInput"
               name="todoTextInput"
               rows="1"
-              placeholder="Write a to-do here"
+              placeholder={text.homePage.textInput.placeholder}
               value={textContent}
               onChange={handleChange}
               onKeyDown={(e) => {
@@ -44,7 +44,7 @@ const TextInput = () => {
             />
             <input
               type="reset"
-              value="Clear"
+              value={text.homePage.textInput.clearButton}
               onClick={handleReset}
               data-testid="reset-btn"
               className="w-full rounded-xl text-white font-semibold bg-red-500"
@@ -52,7 +52,7 @@ const TextInput = () => {
           </div>
           <input
             type="button"
-            value="Create"
+            value={text.homePage.textInput.createButton}
             onClick={handleSubmit}
             className="rounded-2xl bg-blue-500 grow ml-1 px-2 text-white font-semibold"
           />

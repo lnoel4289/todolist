@@ -1,24 +1,29 @@
 import { useSelector } from "react-redux";
+import data from "../../data/lang";
 
 const AboutPage = () => {
   const mode = useSelector((state) => state.mode);
+  const lang = useSelector((state) => state.lang);
+  const text = lang === "en" ? data.en : data.fr;
 
   return (
-    <div className={mode === "dark" ? "grow dark bg-gray-700" : "grow bg-gray-100"}>
+    <div
+      className={mode === "dark" ? "grow dark bg-gray-700" : "grow bg-gray-100"}
+    >
       <main className="px-5 sm:px-10 font-indie text-sm xs:text-lg sm:text-3xl dark:text-gray-300">
         <p className="mt-2 xs:mt-5">
-          Welcome to this to-do list single page application !
+          {text.aboutPage.p1}
         </p>
         <br />
         <p className="mt-2 xs:mt-5">
-          You can freely use this with no limitations.
+        {text.aboutPage.p2}
         </p>
         <br />
         <p className="mt-2 xs:mt-5">
-          Please don't write here any sensible information, as this app use your browser's local storage which, may be read by third party.
+        {text.aboutPage.p3}
         </p>
         <br />
-        <p>Have good to-do's !</p>
+        <p>{text.aboutPage.p4}</p>
         <br />
       </main>
     </div>

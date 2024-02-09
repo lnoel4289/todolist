@@ -5,7 +5,7 @@ import * as todoListActions from "../TodoList/todoListSlice";
 import * as doneListActions from "../DoneList/doneListSlice";
 import Todo from "../Todo";
 
-const DoneList = () => {
+const DoneList = ({ text }) => {
   const dispatch = useDispatch();
   const doneList = useSelector((state) => state.doneList);
 
@@ -33,6 +33,7 @@ const DoneList = () => {
                 handleChange={handleUncheck}
                 handleDelete={handleDeleteDone}
                 testId="done-list-item"
+                label={text.homePage.todo.label}
               />
             </li>
           );

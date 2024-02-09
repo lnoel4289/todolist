@@ -3,11 +3,13 @@ import ToggleSwitch from "../ToggleSwitch";
 import { useDispatch, useSelector } from "react-redux";
 import * as langActions from "../ToggleSwitch/langSlice";
 import * as modeActions from "../ToggleSwitch/modeSlice";
+import data from "../../data/lang";
 
 const Header = () => {
   const dispatch = useDispatch();
   const lang = useSelector((state) => state.lang);
   const mode = useSelector((state) => state.mode);
+  const text = lang === "en" ? data.en : data.fr;
   const toggleLang = () => {
     dispatch(langActions.change());
   };
@@ -31,7 +33,7 @@ const Header = () => {
                     isActive ? "border border-black rounded px-0.5" : ""
                   }
                 >
-                  Home
+                  {text.header.home}
                 </NavLink>
               </li>
               <li>
@@ -41,7 +43,7 @@ const Header = () => {
                     isActive ? "border border-black rounded px-0.5" : ""
                   }
                 >
-                  About
+                  {text.header.about}
                 </NavLink>
               </li>
             </ul>

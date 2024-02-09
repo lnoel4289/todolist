@@ -5,6 +5,7 @@ const Todo = ({
   handleDelete,
   testId,
   index,
+  label,
 }) => {
   const baseArticleStyle = "p-1 rounded shadow-lg";
   const undoneArticleStyle = "bg-blue-300";
@@ -33,7 +34,7 @@ const Todo = ({
             : `${baseSpanStyle} ${undoneSpanStyle}`
         }
       >
-        {isChecked ? "Done !" : index + 1}
+        {isChecked ? label : index + 1}
       </span>
       <div className="flex justify-between mt-1">
         <p
