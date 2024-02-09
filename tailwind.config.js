@@ -14,9 +14,6 @@ export default {
       minHeight: {
         38: "38px",
       },
-      backgroundImage: {
-        portrait: "url('/src/assets/pexels-sergey-makashin-5444995.webp')",
-      },
       colors: {
         sky: "#7390B8",
         trans_blk: "rgba(0, 0, 0, 0.5)",

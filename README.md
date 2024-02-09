@@ -59,17 +59,11 @@ To deploy this project run
 
 ## Roadmap
 
-- main page warning about using local storage
-
-- test local storage usage in TodoList, Done, TextInput and their slices
-
 - hover & focus effects
 
 - add confirming and/or cancelling delete
 
 - allow editing existing Todo's and Done's
-
-- add dark mode
 
 - add FR/EN language mode
 
