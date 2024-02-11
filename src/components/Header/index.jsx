@@ -27,10 +27,10 @@ const Header = () => {
     >
       <header className="text-sm px-3 xs:px-5 py-1.5 h-14 xs:h-14 sm:h-20 flex flex-col justify-between shadow-scan59 shadow-gray-400 dark:shadow-none bg-gray-50 dark:bg-gray-800 dark:text-gray-300">
         <div className="flex">
-          <h1 className="sm:relative top-4 sm:h-16 grow-[2] xs:grow-[5] sm:grow-[8] font-pacifico xs:text-lg sm:text-4xl">
+          <h1 className="tracking-wide ss:tracking-widest sm:relative top-4 sm:h-16 grow-[2] xs:grow-[5] sm:grow-[8] font-pacifico xs:text-lg sm:text-4xl">
             my_TODOList
           </h1>
-          <nav className="w-3/5 grow grid p-0.5 font-bold sm:text-2xl sm:relative top-3">
+          <nav className="w-3/5 xs:w-7/12 ss:w-1/2 grow grid p-0.5 font-bold sm:text-2xl sm:relative top-3">
             <ul className="grid grid-cols-2 justify-between uppercase text-xs sm:text-2xl">
               <li className="justify-self-end text-sm">
                 <NavLink

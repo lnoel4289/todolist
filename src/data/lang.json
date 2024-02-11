@@ -15,9 +15,9 @@
       }
     },
     "aboutPage": {
-      "p1": "Welcome to this to-do list single page application !",
+      "p1": "Welcome to this to-do list application !",
       "p2": "You can freely use this with no limitations.",
-      "p3": "Please don't write here any sensible information, as this app use your browser's local storage which, may be read by third party.",
+      "p3": "Please don't write here any sensible information, as this app use your browser's local storage which isn't secure.",
       "p4": "Have good to-do's !"
     }
   },
@@ -38,7 +38,7 @@
     },
     "aboutPage": {
       "p1": "Bienvenue sur l'application to-do list my_TODOList !",
-      "p2": "Vous pouvez utiliser cet utilitaire librement et sans restriction.",
+      "p2": "Vous pouvez utiliser cet outil librement et sans restriction.",
       "p3": "N'écrivez toutefois pas d'informations sensibles ici car cette appli utilise le stockage local non-sécurisé du navigateur.",
       "p4": "Je vous souhaite de bons projets to-do !"
     }

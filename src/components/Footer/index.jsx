@@ -6,8 +6,8 @@ const Footer = () => {
 
   return (
     <div className={mode === "dark" ? "dark" : ""}>
-      <footer className="flex items-center px-5 bg-gray-400 dark:bg-gray-800 text-white dark:text-gray-300 h-11">
-        © Laurent Noel - 2023
+      <footer className="flex items-center px-5 bg-gray-900 text-white dark:text-gray-300 h-11">
+        © Laurent Noel - 2024
       </footer>
     </div>
   );

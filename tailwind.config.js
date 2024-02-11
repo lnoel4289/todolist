@@ -5,6 +5,7 @@ export default {
     extend: {
       screens: {
         xs: "320px",
+        ss: "360px",
       },
       fontFamily: {
         indie: ["Indie Flower"],
@@ -17,7 +18,7 @@ export default {
       colors: {
         sky: "#7390B8",
         trans_blk: "rgba(0, 0, 0, 0.5)",
-        silver: "#C0C0C0"
+        silver: "#C0C0C0",
       },
       boxShadow: {
         scan59: "0px 10px 10px -10px rgba(33, 35, 38, 0.1)",
