@@ -65,9 +65,7 @@ To deploy this project run
 
 - allow editing existing Todo's and Done's
 
-- add FR/EN language mode
-
-- add backend to allow user to sign up
+- add backend allowing user to sign up
 
 - allow to move elements manually within lists (drag'n drop)
 
