@@ -32,7 +32,7 @@ const Header = () => {
           </h1>
           <nav className="w-3/5 grow grid p-0.5 font-bold sm:text-2xl sm:relative top-3">
             <ul className="grid grid-cols-2 justify-between uppercase text-xs sm:text-2xl">
-              <li className="justify-self-end">
+              <li className="justify-self-end text-sm">
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
@@ -42,7 +42,7 @@ const Header = () => {
                   {text.header.home}
                 </NavLink>
               </li>
-              <li className="justify-self-end">
+              <li className="justify-self-end text-sm">
                 <NavLink
                   to="/about"
                   className={({ isActive }) =>

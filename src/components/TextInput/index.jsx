@@ -54,7 +54,7 @@ const TextInput = ({ text }) => {
             type="button"
             value={text.homePage.textInput.createButton}
             onClick={handleSubmit}
-            className="w-20 rounded rounded-r-xl bg-blue-500 shadow-blue-600 shadow-inner ml-1 text-white font-semibold"
+            className="w-20 xs:w-24 rounded rounded-r-xl bg-blue-500 shadow-blue-600 shadow-inner ml-1 text-white font-semibold"
           />
         </div>
       </form>
