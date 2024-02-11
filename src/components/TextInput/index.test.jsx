@@ -2,6 +2,7 @@ import TextInput from ".";
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import store from "../../store";
 import Wrapper from "../../testsUtils/Wrapper";
+import data from "../../data/lang";
 
 /**
  * SPECIFICATIONS
@@ -9,8 +10,9 @@ import Wrapper from "../../testsUtils/Wrapper";
  */
 
 describe("TextInput", () => {
+  const text = data.en;
   beforeEach(() => {
-    render(<TextInput />, { wrapper: Wrapper });
+    render(<TextInput text={text} />, { wrapper: Wrapper });
   });
 
   it("should verify that state.textInput and textInput are always equal", async () => {
