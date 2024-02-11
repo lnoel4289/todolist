@@ -8,9 +8,9 @@ const AboutPage = () => {
 
   return (
     <div
-      className={mode === "dark" ? "grow dark bg-gray-700" : "grow bg-gray-100"}
+      className={mode === "dark" ? "grow dark bg-gray-700" : "grow"}
     >
-      <main className="px-5 sm:px-10 font-indie text-sm xs:text-lg sm:text-3xl dark:text-gray-300">
+      <main className="px-3 xs:px-5 sm:px-10 font-indie text-sm xs:text-lg sm:text-3xl dark:text-gray-300">
         <p className="mt-2 xs:mt-5">
           {text.aboutPage.p1}
         </p>

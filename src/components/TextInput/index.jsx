@@ -25,7 +25,7 @@ const TextInput = ({ text }) => {
   return (
     <>
       <form>
-        <div className="flex bg-white dark:bg-gray-800 rounded p-1 mt-1">
+        <div className="flex bg-silver rounded-2xl p-1 mt-1">
           <div className="w-full">
             <textarea
               id="todoTextInput"
@@ -40,21 +40,21 @@ const TextInput = ({ text }) => {
                   handleSubmit();
                 }
               }}
-              className="h-11 sm:h-14 w-full p-2 rounded border dark:border-gray-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-300"
+              className="h-11 sm:h-14 w-full p-2 rounded rounded-tl-xl  dark:border-gray-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-300"
             />
             <input
               type="reset"
               value={text.homePage.textInput.clearButton}
               onClick={handleReset}
               data-testid="reset-btn"
-              className="w-full rounded-xl text-white font-semibold bg-red-500"
+              className="w-full rounded rounded-bl-xl text-white font-semibold bg-red-500 shadow-red-600 shadow-inner"
             />
           </div>
           <input
             type="button"
             value={text.homePage.textInput.createButton}
             onClick={handleSubmit}
-            className="rounded-2xl bg-blue-500 grow ml-1 px-2 text-white font-semibold"
+            className="w-20 rounded rounded-r-xl bg-blue-500 shadow-blue-600 shadow-inner ml-1 text-white font-semibold"
           />
         </div>
       </form>

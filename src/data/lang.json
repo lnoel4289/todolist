@@ -6,7 +6,7 @@
     },
     "homePage": {
       "textInput": {
-        "placeholder": "Write a to-do here",
+        "placeholder": "Write",
         "createButton": "Create",
         "clearButton": "Clear"
       },
@@ -28,9 +28,9 @@
     },
     "homePage": {
       "textInput": {
-        "placeholder": "Ecrivez ici",
-        "createButton": "Créer",
-        "clearButton": "Effacer"
+        "placeholder": "Ecrivez",
+        "createButton": "Créez",
+        "clearButton": "Effacez"
       },
       "todo": {
         "label": "terminé !"

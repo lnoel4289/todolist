@@ -18,29 +18,35 @@ const Header = () => {
   };
 
   return (
-    <div className={mode === "dark" ? "dark z-10 sticky top-0 left-0 right-0" : "z-10 sticky top-0 left-0 right-0"}>
-      <header className="h-14 xs:h-14 sm:h-20 flex justify-between items-center px-5 shadow-scan59 shadow-gray-400 dark:shadow-none bg-gray-100 dark:bg-gray-800 dark:text-gray-300">
-        <h1 className="sm:relative top-4 sm:h-16 grow-[2] xs:grow-[5] sm:grow-[8] font-pacifico text-lg xs:text-2xl sm:text-4xl">
-          my_TODOList
-        </h1>
-        <div className="grow flex flex-col justify-between h-full p-0.5">
-          <nav className="font-bold sm:text-2xl sm:relative top-3">
-            <ul className="flex justify-between items-center uppercase text-lg sm:text-2xl">
-              <li>
+    <div
+      className={
+        mode === "dark"
+          ? "dark z-10 sticky top-0 left-0 right-0"
+          : "z-10 sticky top-0 left-0 right-0"
+      }
+    >
+      <header className="text-sm px-3 xs:px-5 py-1.5 h-14 xs:h-14 sm:h-20 flex flex-col justify-between shadow-scan59 shadow-gray-400 dark:shadow-none bg-gray-50 dark:bg-gray-800 dark:text-gray-300">
+        <div className="flex">
+          <h1 className="sm:relative top-4 sm:h-16 grow-[2] xs:grow-[5] sm:grow-[8] font-pacifico xs:text-2xl sm:text-4xl">
+            my_TODOList
+          </h1>
+          <nav className="w-32 grow grid p-0.5 font-bold sm:text-2xl sm:relative top-3">
+            <ul className="grid grid-cols-2 justify-between uppercase text-xs sm:text-2xl">
+              <li className="justify-self-end">
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
-                    isActive ? "border border-black rounded px-0.5" : ""
+                    isActive ? "bg-gray-400 text-white rounded px-1 py-0.5" : ""
                   }
                 >
                   {text.header.home}
                 </NavLink>
               </li>
-              <li>
+              <li className="justify-self-end">
                 <NavLink
                   to="/about"
                   className={({ isActive }) =>
-                    isActive ? "border border-black rounded px-0.5" : ""
+                    isActive ? "bg-gray-400 text-white rounded px-1 py-0.5" : ""
                   }
                 >
                   {text.header.about}
@@ -48,22 +54,22 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-          <div className="grid grid-cols-2">
-            <ToggleSwitch
-              id="lang"
-              text="FR"
-              state={lang}
-              handleChange={toggleLang}
-              isChecked={lang === "en" ? false : true}
-            />
-            <ToggleSwitch
-              id="mode"
-              text="🌒"
-              state={mode}
-              handleChange={toggleMode}
-              isChecked={mode === "light" ? false : true}
-            />
-          </div>
+        </div>
+        <div className="flex">
+          <ToggleSwitch
+            id="lang"
+            text="FR"
+            state={lang}
+            handleChange={toggleLang}
+            isChecked={lang === "en" ? false : true}
+          />
+          <ToggleSwitch
+            id="mode"
+            text="🌒"
+            state={mode}
+            handleChange={toggleMode}
+            isChecked={mode === "light" ? false : true}
+          />
         </div>
       </header>
     </div>
