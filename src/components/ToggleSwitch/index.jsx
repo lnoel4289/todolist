@@ -17,7 +17,7 @@ const ToggleSwitch = ({ id, text, state, handleChange, isChecked }) => {
         ></input>
         <span className="absolute inset-0 bg-silver rounded-full cursor-pointer before:flex before:absolute before:w-3 before:h-3 before:rounded-full before:bg-white before:top-0.5 before:left-0.5 before:duration-300 before:peer-checked:translate-x-4"></span>
       </label>
-      <span>{text}</span>
+      <span className="ml-0.5 mr-2">{text}</span>
     </div>
   );
 };

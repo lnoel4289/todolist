@@ -47,14 +47,14 @@ const TextInput = ({ text }) => {
               value={text.homePage.textInput.clearButton}
               onClick={handleReset}
               data-testid="reset-btn"
-              className="w-full rounded rounded-bl-xl text-white font-semibold bg-red-500 shadow-red-600 shadow-inner"
+              className="w-full rounded rounded-bl-xl text-white font-semibold bg-red-500 shadow-red-700 shadow-inner"
             />
           </div>
           <input
             type="button"
             value={text.homePage.textInput.createButton}
             onClick={handleSubmit}
-            className="w-20 xs:w-24 rounded rounded-r-xl bg-blue-500 shadow-blue-600 shadow-inner ml-1 text-white font-semibold"
+            className="w-20 xs:w-24 rounded rounded-r-xl bg-blue-500 shadow-blue-700 shadow-inner ml-1 text-white font-semibold"
           />
         </div>
       </form>
