@@ -65,10 +65,10 @@ To deploy this project run
 
 - allow editing existing Todo's and Done's
 
-- add backend allowing user to sign up
+- add backend allowing user to sign up (progress)
 
 - allow to move elements manually within lists (drag'n drop)
 
-- allow to move elements manually between lists (drag'n drop)
+- allow to move elements manually across lists (drag'n drop)
 
 - scroll up arrow
