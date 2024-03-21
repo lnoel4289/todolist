@@ -11,11 +11,13 @@ const HomePage = () => {
   const text = lang === "en" ? data.en : data.fr;
 
   return (
-    <div className={mode === "dark" ? "grow dark bg-gray-700" : "grow bg-gray-50"}>
+    <div
+      className={mode === "dark" ? "grow dark bg-gray-700" : "grow bg-gray-50"}
+    >
       <main className="px-3 xs:px-5 grid gap-y-10 py-2 flex-col content-start">
         <TextInput text={text} />
         <TodoList />
-        <DoneList text={text}/>
+        <DoneList text={text} />
       </main>
     </div>
   );

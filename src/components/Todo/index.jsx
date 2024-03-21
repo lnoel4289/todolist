@@ -49,7 +49,11 @@ const Todo = ({
         <div className="flex items-center space-x-2 px-1 pl-2">
           <label
             htmlFor={isChecked ? `done${index}` : `todo${index}`}
-            className= {isChecked ? "relative w-8 h-8 bg-white border rounded border-black" : "relative w-8 h-8 bg-white border rounded border-blue-500"}
+            className={
+              isChecked
+                ? "relative w-8 h-8 bg-white border rounded border-black"
+                : "relative w-8 h-8 bg-white border rounded border-blue-500"
+            }
           >
             <input
               type="checkbox"
