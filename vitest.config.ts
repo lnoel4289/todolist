@@ -10,5 +10,12 @@ export default defineConfig({
       provider: 'v8',
       reporter: ['text', 'json', 'html'],
     },
+    deps: {
+      optimizer: {
+        web: {
+          include: ['react', 'react-dom']
+        }
+      }
+    }
   },
 }) 
