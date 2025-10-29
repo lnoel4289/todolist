@@ -3,17 +3,22 @@ import * as doneListActions from "./doneListSlice";
 
 describe("doneListSlice", () => {
   it("should add textContent to top of doneList array when action is add", () => {
-    expect(doneListReducer([], doneListActions.add("hello"))).toEqual([
+    const emptyState: string[] = [];
+    const singleItemState: string[] = ["hello"];
+    
+    expect(doneListReducer(emptyState, doneListActions.add("hello"))).toEqual([
       "hello",
     ]);
-    expect(doneListReducer(["hello"], doneListActions.add("world"))).toEqual([
+    expect(doneListReducer(singleItemState, doneListActions.add("world"))).toEqual([
       "world",
       "hello",
     ]);
   });
+
   it("should remove element from doneList array according to its index when action is remove", () => {
+    const initialState: string[] = ["goodbye", "hello", "world"];
     expect(
-      doneListReducer(["goodbye", "hello", "world"], doneListActions.remove(1))
+      doneListReducer(initialState, doneListActions.remove(1))
     ).toEqual(["goodbye", "world"]);
   });
-});
+}); 
